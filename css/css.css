@@ -1,0 +1,235 @@
+@media (max-width: 1920px){
+html{
+
+    width: 1920px;
+    
+} 
+.header{
+    display: none;
+}
+.menu1{
+    display: none;
+}
+a{
+    color:  #7C7979;
+}
+.showmenu{
+	display: none;
+}
+
+.title{
+    width: 1920px;
+    
+    margin-top: 0px;
+}
+.menu{
+    display: flex;
+    list-style: none;
+   margin: 0px;
+   padding: 0px;
+}
+li{
+    color: #707070;
+    font-size: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  margin: 0px;
+
+}
+.li1{
+    margin-left: 266px;
+    text-align: left;
+}
+.li2{
+    
+    text-align: left;
+    margin-left: 273px;
+    white-space:nowrap;
+}
+.li3{
+    text-align: left;
+    margin-left: 273px;
+}
+.li4{
+    text-align: left;
+    margin-left: 273px;
+    white-space:nowrap;
+}
+
+hr{
+    margin-left: 102.5px;
+    margin-right: 102.5px;
+    border: 2px solid #707070;
+    margin-top: 13.5px;
+}
+.text{
+    width: 1679px;
+    height: 774px;
+    margin-top: 96.5px;
+    margin-left: 124px;
+}
+.footer{
+text-align: left;
+font: Light 25px/33px Segoe UI;
+letter-spacing: 0.75px;
+color: #7C7979;
+text-align: center;
+margin-top: 42px;
+margin-bottom: 42px;
+}
+}
+@media (max-width: 768px){
+
+    html{
+        width: 768px;
+        
+    } 
+    .header{
+        display: none;
+    }
+    .menu1{
+        display: none;
+    }
+    .title{
+        width: 768px;
+        height: 336px;
+        margin-top: 0px;
+    }
+    .menu{
+        display: flex;
+        list-style: none;
+       margin: 0px;
+       padding: 0px;
+    }
+    li{
+        color: #707070;
+        font-size: 25px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: lighter;
+      margin: 0px;
+    
+    }
+    .li1{
+        margin-left: 101px;
+        text-align: left;
+    }
+    .li2{
+        
+        text-align: left;
+        margin-left: 78px;
+        white-space:nowrap;
+    }
+    .li3{
+        text-align: left;
+        margin-left: 66px;
+    }
+    .li4{
+        text-align: left;
+        margin-left: 61px;
+        white-space:nowrap;
+    }
+    hr{
+        border: 2px solid #707070;
+        margin-left: 63.5px;
+        margin-right: 64.69px;
+    }
+    .text{
+        width: 691px;
+        height: 374px;
+        margin-top: 48.55px;
+        margin-left: 39px;
+    }
+    .footer{
+        text-align: left;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        letter-spacing: 0.45px;
+        color: #7C7979;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 6px;
+        }
+}
+@media (max-width: 320px){
+    html{
+        width: 320px;
+        
+    } 
+    .header{
+        display: block;
+        display: flex;
+        
+        justify-content: space-between;
+    }
+    .headertxt{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: lighter;
+      color: #707070;
+    }
+    .title{
+        width: 320px;
+        height: 140px;
+        margin-top: 0px;
+    }
+    .nav{
+        display: none;
+    }
+    .text{
+        width: 320px;
+        height: 219px;
+        margin-top: 31px;
+        margin-left: 0px;
+    }
+    .footer{
+        text-align: left;
+        font-size: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+        letter-spacing: 0.45px;
+        color: #7C7979;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 6px;
+        }
+    .menu1{
+		/*隱藏選單開始*/
+		max-height: 0;
+		overflow: hidden;
+		/*隱藏選單結束*/
+		/*漸變效果*/
+    	transition: max-height 2.3s;
+    	margin-top: 1px;
+    	/*絕對定位疊在網頁上*/
+    	position: relative;
+    	/*權重*/
+    	z-index: 100;
+    	/*header 80px+1px boder 線條*/
+    	top: 81px;
+    	/* left:0 right:0表示滿版 */
+    	left: 0;
+   		right: 0;
+    	background: white;
+	}
+	.menu1 li{
+		float: none;
+		border-bottom: 1px dashed #69CA62;
+	}
+	.menu1 li a{
+    	transition: all 0.3s;
+  	}
+	.umenu1 li a:hover{
+    	background: #69CA62;
+    	color:#707070;
+  	}
+	.showmenu{
+    	display: block;
+    	float: right;
+    	margin: 1em;
+  	}
+  	/*jQuery點擊後動態在 body 加上 class */
+  	.menu-show .menu1{
+  		max-height: 500px;
+  	}
+
+}
